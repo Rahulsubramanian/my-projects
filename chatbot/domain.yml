@@ -1,0 +1,81 @@
+intents:
+  - greet
+  - enquiry
+  - room
+  - affirm
+  - deny
+  - types
+  - check_in
+  - clean
+  - check_out
+  - cancel_reserv
+  - cancel_policy
+  - restaurant
+  - rest_time
+  - breakfast_available
+  - breakfast_timming
+  
+actions:
+  - action_room_enqiry
+  
+#templates:
+#  utter_deny:
+#  - text: "type of room you want?"
+#    buttons:
+#      -  title:"simple"
+#         payload:"/types"
+#      -  title:"delux"
+#         payload:"/types"  
+
+responses:
+  utter_greet:
+  - text: "hi,welcome to le meridin I am your virtual assiatant."
+    
+  utter_enquiry:
+  - text: "how many rooms you want?"
+  
+  utter_affirm:
+  - text: "how many children?"
+  
+  utter_deny:
+  - text: " what type of room :single or delux"
+  
+  utter_confirm:
+  - text: "confirm booking"
+         
+  utter_confirmation:
+  - text: "your booking has been confirmed"
+  
+  utter_cleaning:
+  - text: "When should I arrange for a cleaning?"
+  
+  utter_time:
+  - text: " cleaning sheduled has been confirmed"
+  utter_check_in:
+  - text: " Check-in time starts at 4 PM. Minimum check-in age is 21. Please contact the reception for early check-in requests."
+    
+  utter_check_out:
+  - text: " Check-out time is 11 AM. Please contact the reception for late checkout requests."
+  
+  utter_cancel_reserv1:
+  - text: " To cancel a reservation, select the “Reservations” link from the homepage."
+  utter_cancel_reserv2:
+  - text: " On the Reservations page, under the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last name on the reservation or the last four digits of the credit card used to make the reservation."  
+
+  utter_cancel_policy:
+  - text: "The booking deposit is refundable if the cancellation occurs at least 15 days before arrival. For cancellations made after this limit, a penalty will be imposed based on the cancellation policy."  
+  utter_restaurant:
+  - text: " Yes, the hotel has a restaurant called the Zephyr Bar. With our menu we strive to reflect the historic art and the spirit of our neighborhood by offering a glimpse into what makes our area unique."
+  
+  utter_rest_time:
+  - text: "  Our restaurant serves a dazzling 24-hour menu."  
+  
+  utter_breakfast_available:
+  - text: " The hotel provides its guests with a free made-to-order breakfast each morning."  
+  
+  utter_breakfast_timming:
+  - text: "  Monday through Friday breakfast is 6 am to 9 am. On Saturday and Sunday, we are open from 7 am to 10:30 am."  
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
